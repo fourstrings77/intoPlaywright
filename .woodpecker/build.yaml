@@ -5,15 +5,15 @@ matrix:
   PW_VERSION:
     - 1.52.0
 steps:
-  "Test docker build":
-      image: woodpeckerci/plugin-docker-buildx
-      settings:
-        repo: registry.fourstrings.duckdns.org/hauke/intoplaywright
-        dry-run: true
+#  "Test docker build":
+#      image: woodpeckerci/plugin-docker-buildx
+#      settings:
+#        repo: registry.fourstrings.duckdns.org/hauke/intoplaywright
+#        dry-run: true
   "Docker build and push":
        image: woodpeckerci/plugin-docker-buildx
        settings:
         repo: registry.fourstrings.duckdns.org/hauke/intoplaywright
         registry: registry.fourstrings.duckdns.org
-        platforms: linux/amd64, linux/arm/v8
+        platforms: linux/arm64
         tags: ${PW_VERSION} 
