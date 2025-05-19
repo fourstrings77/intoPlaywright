@@ -15,5 +15,5 @@ steps:
        settings:
         repo: registry.fourstrings.duckdns.org/hauke/intoplaywright
         registry: registry.fourstrings.duckdns.org
-        platforms: linux/amd64, linux/arm/v8, 
+        platforms: linux/amd64, linux/arm/v8
         tags: ${PW_VERSION} 
